@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./styles/customerCare.css" />
+
+</head>
+<body>
+
+	<div class="container"  >
+	
+			<h3> Customer Care works</h3>
+
+			<div class="radio-group">
+				<input type="radio" id="dsn" name="selector" ng-model='dsn' />
+				<label for="dsn">DSN</label>
+
+				<input type="radio" id="email" name="selector" ng-model='email' />
+				<label for="email">EMAIL</label>
+  			</div>
+
+			<div id="input-area">
+				
+				<input type="text" name="search" size="20" ng-model='searchString' />
+				<br />
+				
+			</div>
+
+			<button ng-click="routeLookup(searchString)" type="button" id="button" >Search</button>
+	</div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="angular.js"></script>
+    <script>
+        var x = angular.module('m1', []);
+        x.directive('showEmp', function() {
+            return {
+                scope: {
+                    employee: '='
+                },
+                template: '<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>' + '
+        <th>Salary</th>
+        <th>gender</th>
+    </tr>
+    <tr ng-repeat="emp in employee">' + '
+        <td>{{emp.id }}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.salary}}</td>' + '
+        <td>{{emp.gender}}</td>
+    </tr>
+</table>'
+            }
+        });
+        x.controller("con1", function($scope) {
+            $scope.employee = [{
+                id: 101,
+                name: 'isha',
+                salary: 15000,
+                gender: 'f'
+            }, {
+                id: 102,
+                name: 'neha',
+                salary: 13000,
+                gender: 'f'
+            }, {
+                id: 103,
+                name: 'pooja',
+                salary: 25000,
+                gender: 'f'
+            }, {
+                id: 104,
+                name: 'rahul',
+                salary: 5000,
+                gender: 'm'
+            }, {
+                id: 105,
+                name: 'sakshi',
+                salary: 45000,
+                gender: 'f'
+            }];
+        });
+    </script>
+</head>
+
+<body ng-app="m1">
+    <div ng-controller="con1">
+        <show-emp employee='employee'></show-emp>
+    </div>
+</body>
+
+</html>

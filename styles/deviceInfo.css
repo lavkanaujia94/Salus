@@ -1,0 +1,29 @@
+.col-sm-2{
+
+	background-color: #4d88ff;
+	height: 1000px;
+}
+
+.searchInput {
+
+	margin: 20px;
+}
+
+input{
+	border-radius: 20px;
+}
+
+.listContainer{
+	margin-left: -17px;
+}
+
+ul li a{
+
+	font-size: 27px;
+	color: aliceblue;
+	cursor: pointer;
+}
+
+
+
+

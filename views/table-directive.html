@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./styles/table-directive.css"></link>
+</head>
+<body>
+
+	<table style="width:100%">
+  <tr>
+    <th ng-repeat="item in controllerdata.headList">{{ item }}</th>
+  </tr>
+  <tr >
+    <td ng-repeat="item in controllerdata.rowList">{{ item }}</td>
+   
+  </tr>
+</table>
+
+</body>
+</html>

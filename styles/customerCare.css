@@ -1,0 +1,32 @@
+.container {
+    margin-left: 40%;
+}
+
+input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+
+label {
+    color: #03020c;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+input[type=radio]:checked + label {
+    color: #ccc8ce;
+    background: #642385;
+}
+
+.radio-group {
+    border: solid #38104d;
+    display: inline-block;
+    margin: 20px;
+}
+
+#sidebarlink {
+    cursor: pointer;
+}

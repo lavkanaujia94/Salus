@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./styles/deviceInfo.css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></link>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    </link>
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div class="col-sm-2">
+
+            <div class="searchInput">
+                <input type="text" name="search" placeholder="search for device" />
+            </div>
+
+            <div class="listContainer">
+                <ul style="list-style-type:none">
+                    <li><a ng-click="overview()">Overview</a></li>
+                    <li><a ng-click="device()">Device</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="col-sm-10">
+
+            <div ng-show="showOverview">
+
+                <table-directive controllerdata='table'></table-directive>
+            </div>
+
+            <div ng-show="showDevice">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

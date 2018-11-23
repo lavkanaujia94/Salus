@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+		<meta charset="utf-8">
+	<title>AngularJS Practice</title>
+	<link rel="stylesheet" type="text/css" href="./app.css">
+	
+</head>
+<body>
+		<div class="topnav">
+            <a class="active" href="#/home">Home</a>
+            <a href="#/customerCare">Customer Care</a>
+ 
+		</div>
+
+
+		<div ng-app="mainApp">
+			<ng-view></ng-view>
+		</div>
+		
+		<script type="text/javascript" src="./angular-1.5.0/angular.js"></script>
+
+		<script type="text/javascript" src="./angular-1.5.0/angular-route.js"></script>	
+
+		<script type="text/javascript" src="./scripts/app.js"></script>
+		<script type="text/javascript" src="./scripts/table-directive.js"></script>
+		<script type="text/javascript" src="./services/customerLookupService.js"></script>
+		<script type="text/javascript" src="./scripts/customerCareController.js"></script>
+		<script type="text/javascript" src="./scripts/customerCareLookupController.js"></script>
+		<script type="text/javascript" src="./scripts/deviceInfoController.js"></script>
+
+
+
+</body>
+</html>
